@@ -1,4 +1,6 @@
-- name: restart nginx   # restart nginx
+
+- name: enable and start nginx
   ansible.builtin.service:
     name: nginx
-    state: restarted
+    state: started
+    enabled: yes
