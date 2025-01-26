@@ -24,12 +24,12 @@
     src: /tmp/frontend.zip
     dest: /usr/share/nginx/html
     remote_src: yes
-- name: copy expense config # copy expense config
+- name: copy expense config
   ansible.builtin.template:
     src: expense.conf.j2
-    dest: /etc/nginx/default.d/expene.conf
+    dest: /etc/nginx/default.d/expense.conf
   notify:
-  - restart nginx
+  - Restart Nginx
 # - name: restart nginx   # restart nginx
 #   ansible.builtin.service:
 #     name: nginx
