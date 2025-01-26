@@ -2,7 +2,7 @@
   ansible.builtin.dnf:
     name: nginx
     state: installed
-    
+
 - name: enable and start nginx
   ansible.builtin.service:
     name: nginx
@@ -35,6 +35,7 @@
     dest: /etc/nginx/default.d/expense.conf
   notify:
   - Restart Nginx
+  
 # - name: restart nginx   # restart nginx
 #   ansible.builtin.service:
 #     name: nginx

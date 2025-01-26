@@ -1,3 +1,1 @@
-BACKEND_HOST: frontend.10cloud.tech
-APP_LOCAION: /usr/share/nginx/html
-COMPONENT: frontend
+BACKEND_HOST: backend.10cloud.tech
